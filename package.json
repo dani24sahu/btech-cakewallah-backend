@@ -1,0 +1,24 @@
+{
+  "name": "btech-cake-wallah-server",
+  "version": "1.0.0",
+  "description": "BTech Cake Wallah Backend",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node server.js",
+    "dev": "SET NODE_ENV=development & nodemon server.js"
+  },
+  "author": "Dani Ram Sahu",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.1.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "razorpay": "^2.8.6"
+  }
+}
