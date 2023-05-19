@@ -5,8 +5,10 @@ import {
   getAdminStats,
   logout,
   myProfile,
+  contact,
 } from "../controllers/user.js";
 import { authorizedAdmin, isAuthenticated } from "../middlewares/auth.js";
+
 
 const router = express.Router();
 
@@ -24,6 +26,7 @@ router.get(
 
 router.get("/me", isAuthenticated, myProfile);
 router.get("/logout", logout);
+router.post("/contact", contact);
 
 // Admin Routes
 
